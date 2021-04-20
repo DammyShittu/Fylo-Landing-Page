@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+          --first-color: hsl(217, 28%, 15%);
+          --second-color: hsl(218, 28%, 13%);
+          --third-color: hsl(216, 53%, 9%);
+          --fourth-color: hsl(219, 30%, 18%);
+          --CTA1-color: hsl(176, 68%, 64%);
+          --CTA2-color: hsl(198, 60%, 50%);
+          --primary-color: hsl(0, 0%, 100%);
+          --error-color: hsl(0, 100%, 63%);
+          --raleway-font: "Raleway", sans-serif;
+          --sans-font: "Open Sans", sans-serif;
+}
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body {
+          width: 100%;
+          height: 100%;
+          font-family: var(--sans-font);
+
+          line-height: 1.6;
+          background: var(--second-color);
+          color: var(--primary-color);
+}
+
+h1 {
+          font-size: 2.4rem;
+          line-height: 1.4;
+}
+
+p {
+          opacity: 0.7;
+}
+
+.btn {
+          background: linear-gradient(
+                    to right,
+                    var(--CTA1-color),
+                    var(--CTA2-color)
+          );
+
+          border-radius: 50px;
+          outline: none;
+          text-align: center;
+          border: none;
+          color: var(--raleway-font);
+          cursor: pointer;
+          font-size: 0.9rem;
+}
+
+.btn:hover {
+          font-weight: 700;
+          background: var(--CTA1-color);
+}
+
+#fylo-head {
+          padding: 40px 60px;
+          display: flex;
+          margin: 0 auto;
+          justify-content: space-between;
+          align-items: center;
+          background: var(--first-color);
+}
+
+#fylo-head img {
+          width: 80%;
+}
+
+#fylo-head nav {
+          margin: 0;
+          padding: 0;
+}
+
+#fylo-head nav ul {
+          list-style: none;
+}
+
+#fylo-head nav ul li {
+          display: inline-block;
+          padding: 0 20px;
+}
+
+#fylo-head a {
+          color: var(--primary-color);
+          text-decoration: none;
+          font-size: 1rem;
+          font-family: var(--raleway-font);
+          cursor: pointer;
+          font-weight: 400;
+          opacity: 0.8;
+}
+
+#fylo-head a:hover {
+          text-decoration: underline;
+          font-weight: 700;
+}
+
+.intro-image {
+          width: 80%;
+}
+
+#introduction-section {
+          background: url(./images/bg-curvy-desktop.svg),
+                    linear-gradient(
+                              to top,
+                              var(--first-color) 360px,
+                              var(--first-color) 360px,
+                              var(--first-color) 100%
+                    );
+          background-position: center bottom 0, center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+}
+
+#introduction-section img {
+          width: 70%;
+          max-width: 700px;
+          height: auto;
+          margin-top: -30px;
+          margin-bottom: 30px;
+}
+
+.introduction {
+          width: 50%;
+}
+
+.introduction h1 {
+          opacity: 0.95;
+}
+
+.introduction p {
+          width: 75%;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 20px;
+          font-size: 1.1rem;
+}
+
+.introduction .btn {
+          margin: 15px auto;
+          padding: 12px 50px;
+}
+
+#features-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          margin-top: 100px;
+          text-align: center;
+}
+
+.features {
+          width: 60%;
+          margin: 0 auto;
+          margin-bottom: 100px;
+          padding-top: 15px;
+}
+
+.features img {
+          margin-bottom: 20px;
+}
+
+.features h3 {
+          font-family: var(--raleway-font);
+          padding-bottom: 10px;
+          font-size: 1.4rem;
+}
+
+.features p,
+#fylo-works p,
+#fylo-works a {
+          font-size: 1rem;
+}
+
+#fylo-works {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 80px;
+          margin: 40px;
+}
+
+.works {
+          width: 40%;
+}
+
+#fylo-works h1 {
+          margin-bottom: 25px;
+          width: 60%;
+}
+
+#fylo-works p {
+          padding-bottom: 15px;
+}
+
+#fylo-works a {
+          color: var(--CTA1-color);
+          text-decoration: none;
+          display: flex;
+          width: 180px;
+
+          align-items: center;
+          border-bottom: 1px solid var(--CTA1-color);
+          opacity: 0.8;
+}
+
+.img-1 {
+          margin-left: 15px;
+}
+
+#fylo-works a:hover {
+          color: var(--primary-color);
+          font-weight: 700px;
+          border-bottom: 1px solid var(--primary-color);
+}
+
+.img-2 {
+          margin-top: 80px;
+          position: relative;
+          top: 0;
+          left: 90px;
+}
+
+#testimonials-section {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: space-around;
+          align-items: center;
+          margin: -20px 100px;
+          gap: 40px;
+          position: relative;
+}
+
+.testimonial {
+          background: var(--fourth-color);
+          padding: 30px;
+          height: auto;
+          box-shadow: 0 0 15px var(--first-color);
+          border-radius: 8px;
+}
+
+.testimonial p {
+          font-size: 0.9rem;
+          opacity: 0.6;
+}
+
+.writer {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          margin-top: 20px;
+}
+
+.writer img {
+          width: 30px;
+          border-radius: 50%;
+}
+
+.writer h4 {
+          font-size: 0.85rem;
+}
+
+.writer p {
+          font-size: 0.7rem;
+}
+
+#sign-up {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 13%;
+          background-color: var(--first-color);
+          padding: 40px;
+          box-shadow: 0 0 15px var(--first-color);
+          position: relative;
+          top: 100px;
+          border-radius: 10px;
+}
+
+#sign-up h2 {
+          font-family: var(--raleway-font);
+          font-size: 2.1rem;
+          opacity: 0.9;
+          margin-bottom: 17px;
+}
+
+#sign-up p {
+          font-size: 1.1rem;
+          width: 85%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+}
+
+#sign-up form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+}
+
+input[type="email"] {
+          width: 70%;
+          font-size: 1rem;
+          font-weight: 400;
+          padding: 13px 30px;
+          border-radius: 30px;
+          border: none;
+          color: rgb(33, 31, 31);
+          outline: none;
+          caret-color: chocolate;
+}
+
+input::placeholder {
+          font-size: 0.9rem;
+          opacity: 0.6;
+}
+
+input[type="submit"] {
+          width: 30%;
+          padding: 13px;
+}
+
+footer {
+          background: var(--third-color);
+          padding-top: 13%;
+}
+
+.footer-logo {
+          width: 9%;
+          margin-left: 40px;
+}
+
+#footer-section {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          width: 100%;
+          height: auto;
+          padding: 40px 20px;
+          gap: 20px;
+}
+
+.lorem {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          grid-column: 1 / span 2;
+}
+
+.lorem img {
+          height: 25%;
+          padding-top: 10px;
+}
+
+.lorem p,
+.contact p,
+.bottom-nav a {
+          font-size: 1rem;
+}
+
+.lorem p {
+          width: 77%;
+}
+
+.contact-info {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          grid-column: 3 / span 2;
+}
+
+.contact {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+}
+.contact p {
+          letter-spacing: 2px;
+}
+.contact img {
+          height: 70%;
+}
+
+.bottom-nav {
+          display: flex;
+          flex-direction: column;
+          min-width: 55%;
+          max-width: 100%;
+          margin: 0;
+}
+
+.bottom-nav a {
+          padding-bottom: 10px;
+          color: inherit;
+          opacity: 0.6;
+          text-decoration: none;
+          cursor: pointer;
+}
+
+.bottom-nav a:hover {
+          font-weight: bold;
+          color: inherit;
+          opacity: 1;
+          transition: all 500ms ease-in;
+}
+
+.social-links {
+          display: flex;
+          margin: 0 auto;
+}
+
+.social-links a {
+          font-size: 0.85rem;
+          width: 30px;
+          height: 30px;
+          border: 1px solid var(--primary-color);
+          border-radius: 50%;
+          text-align: center;
+          padding-top: 6px;
+          margin-right: 10px;
+          cursor: pointer;
+          color: var(--primary-color);
+}
+
+.social-links a:hover {
+          color: var(--CTA1-color);
+          border: 1px solid var(--CTA1-color);
+          transition: all 400ms ease-in-out;
+}
+
+.attribution {
+          font-size: 0.75rem;
+          text-align: center;
+          padding: 30px 0 10px 0;
+}
+
+.attribution a {
+          color: inherit;
+          text-decoration: none;
+}
+
+.attribution a:hover {
+          color: var(--error-color);
+          transition: color 400ms ease;
+}
+
+@media only screen and (max-width: 1024px) {
+          #introduction-section {
+                    padding-top: 60px;
+          }
+
+          .introduction {
+                    width: 65%;
+          }
+
+          #fylo-head nav ul {
+                    margin-top: -10px;
+          }
+
+          .features img {
+                    width: 30%;
+          }
+
+          #fylo-works h1 {
+                    width: 85%;
+          }
+
+          .works {
+                    width: 50%;
+          }
+
+          .stay {
+                    width: 105%;
+          }
+
+          footer {
+                    padding-top: 20%;
+          }
+
+          /* .social-links i {
+                    width: 10%;
+                    margin: 0 auto;
+                    text-align: center;
+          } */
+}
+
+@media only screen and (max-width: 768px) {
+          h1 {
+                    font-size: 1.8rem;
+          }
+
+          #fylo-head {
+                    padding: 25px 40px;
+          }
+
+          #fylo-head img {
+                    width: 60%;
+          }
+
+          #fylo-head nav ul li {
+                    padding: 0 15px;
+                    margin-top: -10px;
+          }
+
+          #fylo-head a {
+                    font-size: 0.8rem;
+          }
+
+          .introduction {
+                    width: 75%;
+          }
+
+          .introduction p,
+          .features p {
+                    font-size: 0.9rem;
+          }
+
+          .introduction .btn {
+                    padding: 12px 30px;
+          }
+
+          .features h3 {
+                    font-size: 1.2rem;
+          }
+          .features img {
+                    width: 25%;
+          }
+
+          #fylo-works {
+                    gap: 30px;
+          }
+
+          .works {
+                    width: 80%;
+          }
+
+          .stay {
+                    width: 100%;
+          }
+
+          #fylo-works h1,
+          #sign-up h2 {
+                    font-size: 1.5rem;
+          }
+
+          #fylo-works p,
+          #fylo-works a,
+          #sign-up p {
+                    font-size: 0.85rem;
+          }
+
+          #testimonials-section {
+                    grid-template-columns: 1fr;
+                    gap: 25px;
+          }
+
+          #sign-up {
+                    width: 80%;
+          }
+
+          .footer-logo {
+                    width: 12%;
+                    margin-left: 45px;
+          }
+
+          .lorem p,
+          .contact p,
+          .bottom-nav a {
+                    font-size: 0.8rem;
+          }
+
+          .lorem img {
+                    height: 20%;
+          }
+}
+
+@media screen and (max-width: 600px) {
+          #fylo-head {
+                    padding: 25px 10px;
+          }
+
+          #fylo-head nav ul li {
+                    padding: 0 5px;
+          }
+          #introduction-section {
+                    background: url(./images/bg-curvy-mobile.svg),
+                              linear-gradient(
+                                        to top,
+                                        var(--first-color) 360px,
+                                        var(--first-color) 360px,
+                                        var(--first-color) 100%
+                              );
+                    background-position: center bottom 0, center;
+                    background-size: 170%;
+                    background-repeat: no-repeat;
+                    overflow-x: hidden;
+          }
+
+          .intro-image {
+                    width: 105%;
+          }
+
+          .introduction {
+                    width: 90%;
+          }
+
+          .introduction h1 {
+                    font-size: 1.6rem;
+          }
+
+          #features-section {
+                    grid-template-columns: 1fr;
+          }
+
+          .features {
+                    width: 80%;
+                    margin-bottom: 80px;
+          }
+          .features p,
+          .testimonial p {
+                    font-size: 0.9rem;
+          }
+
+          .features img {
+                    width: 20%;
+          }
+
+          #fylo-works {
+                    flex-direction: column;
+          }
+
+          .works {
+                    width: 100%;
+          }
+
+          #fylo-works h1 {
+                    width: 100%;
+                    font-size: 1.2rem;
+          }
+
+          .img-2 {
+                    width: 9%;
+                    left: 50px;
+                    top: 10px;
+          }
+
+          #testimonials-section {
+                    width: 80%;
+                    gap: 35px;
+                    margin: 0 auto;
+          }
+
+          .writer h4 {
+                    font-size: 0.75rem;
+          }
+
+          .writer p {
+                    font-size: 0.65rem;
+          }
+
+          #sign-up {
+                    width: 85%;
+          }
+
+          #sign-up h2 {
+                    font-size: 1.4rem;
+          }
+
+          #sign-up p {
+                    width: 100%;
+                    font-size: 0.9rem;
+          }
+
+          #sign-up form {
+                    flex-direction: column;
+          }
+
+          input[type="email"],
+          input[type="submit"] {
+                    padding: 16px 30px;
+                    width: 100%;
+          }
+
+          .footer-logo {
+                    padding-top: 100px;
+                    width: 45%;
+          }
+
+          #footer-section {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    margin-top: 20px;
+          }
+
+          .lorem p,
+          .contact p,
+          .bottom-nav a {
+                    font-size: 0.9rem;
+          }
+
+          .lorem {
+                    justify-content: flex-start;
+          }
+
+          .social-links {
+                    margin-top: 60px;
+          }
+
+          .attribution {
+                    margin-top: -20px;
+          }
+}
+
+@media screen and (max-width: 320px) {
+          #fylo-head {
+                    padding: 25px 10px;
+          }
+
+          #fylo-head nav ul li {
+                    padding: 0 5px;
+          }
+
+          #fylo-head a {
+                    font-size: 0.55rem;
+          }
+}
